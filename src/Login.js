@@ -11,7 +11,13 @@ function Login() {
                 alt="Spotify Logo"
             />
             <a href={loginUrl}>LOGIN WITH SPOTIFY</a>
+            {/* <div className="login-wrapper">
+                <h1>Looking for music?</h1>
+                <h2>Start listening to the best new releases.</h2>
+                <a href={loginUrl}>Open Web Player</a>
+            </div> */}
         </div>
+        
     )
 }
 

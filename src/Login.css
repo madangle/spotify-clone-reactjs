@@ -4,7 +4,7 @@
     height: 100vh;
     background-color: black;
 }
-
+.login-wrapper img,
 .login > img{
     width: 100%;
     max-width: 830px;
@@ -17,4 +17,74 @@
     background-color: #1ab26b;
     text-decoration: none;
     font-weight: 800;
+}
+
+.login > div{
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: rgb(41, 65, 171);
+    background-image: url(./assets/images/circles.svg);
+}
+
+@media(min-width:768px){
+    .login > div{
+        min-height: 600px;
+        width: 100%;
+        padding: 50px 50px;
+    }
+    .login > div > h1{
+        font-size: 60px;
+        min-width: 372px;
+        margin: 0px auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        --text-base: #1ed760;
+        color: var(--text-base,inherit);
+        padding: 35px 15px;
+    }
+    .login > div > h2{
+        margin: 32px 0px 0px;
+        padding: 0px;
+        font-size: 24px;
+        text-align: start;
+        color: #1ed760;
+        max-width: 558px;
+        margin: 0px auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        --text-base: #1ed760;
+        color: var(--text-base,inherit);
+        padding: 35px 15px;
+    }
+    .login > div > a{
+        box-sizing: border-box;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        border: 0px;
+        border-radius: 500px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transition-duration: 33ms;
+        transition-property: background-color, border-color, color, box-shadow, filter, transform;
+        user-select: none;
+        vertical-align: middle;
+        transform: translate3d(0px, 0px, 0px);
+        padding: 0px;
+        align-self: center;
+        margin: 0px auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        --text-base: #1ed760;
+        color: var(--text-base,inherit);
+        padding: 35px 15px;
+    }
 }
