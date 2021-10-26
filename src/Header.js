@@ -8,20 +8,19 @@ function Header() {
     const [{user}, dispatch] = useDataLayerValue();
 
     return (
-        <div css="header">
+        <div className="header">
             <div className="header__left">
-                <SearchIcon />
-                <input 
-                    className="" 
-                    type="text" 
-                    placeholder="Search for Artists, Songs or Podcasts"
-                />
+            <SearchIcon />
+            <input
+                placeholder="Search for Artists, Songs, or Podcasts "
+                type="text"
+            />
             </div>
             <div className="header__right">
-                <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
+                <Avatar alt={user?.display_name} src={user?.images[0].url} />
                 <h4>{user?.display_name}</h4>
             </div>
-        </div>
+      </div>
     )
 }
 

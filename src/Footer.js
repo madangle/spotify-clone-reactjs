@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css";
+import usher from './assets/images/usher.jfif';
 
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
@@ -17,7 +18,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__left">
-                <img src="" alt="" className="footer__albumLogo"/>
+                <img src={usher} alt="" className="footer__albumLogo"/>
                 <div className="footer__songInfo">
                     <h4>Yeah!</h4>
                     <p>Usher</p>
